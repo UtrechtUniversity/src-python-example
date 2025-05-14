@@ -1,0 +1,21 @@
+# Requirements for the ResearchCloud Custom Packages Component:
+# https://gitlab.com/rsc-surf-nl/plugins/plugin-custom-packages
+# For use with Exercise 3:
+# https://github.com/UtrechtUniversity/hpc-school-vre-intro/blob/main/exercises.md
+miniconda: 
+  name: geo-kernel
+  channels:
+  - conda-forge
+  dependencies:
+  - python=3.10
+  - numpy>=1.20.0
+  - matplotlib>=3.4.0
+  - geopandas>=0.8.0
+  - pandas
+  - shapely
+  - fiona
+  - contextily
+  - ipykernel
+  - pip
+  - pip:
+  prefix: /etc/miniconda/envs
