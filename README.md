@@ -6,15 +6,17 @@
 
 This repository contains a reproducible example project for demonstrating how to work with different Python environment managing tools on SURF Research Cloud. The repository contains multiple files with the same dependencies following different conventions for the different environment management tools used.
 
+Environment managing tools make it possible to install exactly the packages that where use for developing code on a new computer (e.g. a Research Cloud workspace) with one (or a few) commands. If you would like to learn more about setting up a reproducible project, the workshop [Best Practices for Writing Reproducible code](https://www.uu.nl/en/research/research-data-management/training-workshops/best-practices-for-writing-reproducible-code) might be interesting for you.
+
 The Jupyter notebook in this Repository was originally created by [Aristotelis Kandylas](https://github.com/AristotleKandylas) as part of a [Python for GIS workshop](https://github.com/UtrechtUniversity/gis-python-power).
 
 ## Python tools
 
 The environment managers used are:
 
-- `uv`
-- `pyenv`
-- `conda`
+- [`uv`](https://docs.astral.sh/uv/) (recommended: easy to use, lightning fast, and lockfiles)
+- [`pyenv`](https://github.com/pyenv/pyenv)
+- [`conda`](https://docs.conda.io/en/latest/)
 
 The main Python libraries used are:
 
@@ -27,15 +29,16 @@ The main Python libraries used are:
 ## Scenario 1: Workspace: Python Workbench Desktop 
 
 ### Step 1: Clone the repository
-Open a terminal
+Open a terminal (under Applications, top left of the screen).
 Navigate to your storage volume (if you didn't attach a storage volume, scratch folder is also fine)
 
 In the terminal window, type:
 ```
+ls
 cd data
 ls
 ```
-Check the exact name of your storage volume in the output in the terminl
+Check the exact name of your storage volume in the output in the terminal. It should be similar to the name you entered when creating the storage.
 
 ```
 cd <the name of your storage volume>
@@ -90,6 +93,10 @@ conda activate geo-kernel
 - Install the required extensions (will be asked to you)
 - Select python interpreter (.venv (or geo-kernel in case of conda environment)
 - Click: Run all
+
+### (Optional) Step 4: Run this Notebook as a job with `run_and_pause`
+
+The Notebook in this project is executed very fast. Imagine that you have a notebook that takes hours to run. While it should be able to do this exactly as described above, the more robust and recommended way is to run such a notebook as a 'background job' with `run_and_pause` or `nohup`. Find instructions on how to do this in [Method 2 in this manual](https://utrechtuniversity.github.io/vre-docs/docs/manuals/long-jobs.html).
 
 ## Scenario 2: Workspace: Jupyter Notebook
 
@@ -149,14 +156,14 @@ conda env create --file=environment.yml
 conda activate geo-kernel
 ```
 
-## Step 4: Create Jupyter kernel
+## Step 3: Create Jupyter kernel
 
 Run the following command to create a new kernel that you can use for Jupyter notebooks:
 ```
 python -m ipykernel install --user --name geo-kernel --display-name "Geo kernel" 
 ```
 
-## Step 5: Run the `Vectors.ipynb` Jupyter notebook
+## Step 4: Run the `Vectors.ipynb` Jupyter notebook
 In the filebrowser on the left, navigate to the cloned repository (`src-python-example`), and then to the notebooks folder.
 Double click the `Vectors.ipynb` notebook to open it. 
 In the top right corner, select the `Geo kernel` and then the fast forward button to run all cells of the notebook.
