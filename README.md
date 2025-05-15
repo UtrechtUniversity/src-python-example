@@ -87,7 +87,7 @@ conda activate geo-kernel
 
 ### Step 3: Run the the Jupyter notebook in VSCodium
 
-- Open VSCodium
+- Open VSCodium (Applications > Development > VSCodium)
 - Open the folder of the cloned github repo
 - Open notebooks/Vectors.ipynb
 - Install the required extensions (will be asked to you)
@@ -96,7 +96,7 @@ conda activate geo-kernel
 
 ### (Optional) Step 4: Run this Notebook as a job with `run_and_pause`
 
-The Notebook in this project is executed very fast. Imagine that you have a notebook that takes hours to run. While it should be able to do this exactly as described above, the more robust and recommended way is to run such a notebook as a 'background job' with `run_and_pause` or `nohup`. Find instructions on how to do this in [Method 2 in this manual](https://utrechtuniversity.github.io/vre-docs/docs/manuals/long-jobs.html).
+The Notebook in this project is executed very fast. Imagine that you have a notebook that takes hours to run. While it should be able to do this exactly as described above, the more robust and recommended way is to run such a notebook as a 'background job' with `run_and_pause` or `nohup`. Find instructions on how to do this in [this manual](https://utrechtuniversity.github.io/vre-docs/docs/manuals/long-jobs.html).
 
 ## Scenario 2: Workspace: Jupyter Notebook
 
@@ -112,7 +112,7 @@ ls
 cd data
 ls
 ```
-Check the exact name of your storage volume in the output in the terminl
+Check the exact name of your storage volume in the output in the terminal
 
 ```
 cd <the name of your storage volume>
