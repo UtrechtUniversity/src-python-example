@@ -127,7 +127,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 The terminal will tell you to close the terminal and open a new one.
 
-After opening a new terminal, create an activate the virtual environment:
+After opening a new terminal, make sure you are in the `src-python-example` folder and create and activate the virtual environment:
 
 ```
 uv sync
@@ -141,6 +141,9 @@ Initialize conda
 /etc/miniconda/bin/conda init
 ```
 The terminal will tell you to close the terminal and open a new one.
+
+After opening a new terminal, make sure you are in the `src-python-example` folder and create and activate the virtual environment:
+
 ```
 conda env create --file=environment.yml
 conda activate geo-kernel
