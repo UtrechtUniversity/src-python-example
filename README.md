@@ -98,6 +98,12 @@ conda activate geo-kernel
 
 The Notebook in this project is executed very fast. Imagine that you have a notebook that takes hours to run. While it should be able to do this exactly as described above, the more robust and recommended way is to run such a notebook as a 'background job' with `run_and_pause` or `nohup`. Find instructions on how to do this in [Method 2 in this manual](https://utrechtuniversity.github.io/vre-docs/docs/manuals/long-jobs.html).
 
+### (Optional) Step 5: Transfer your output data to cloud storage directly
+If you have a [Surfdrive](surfdrive.surf.nl)-, Researchdrive- of Yoda account, you can transfer your output data there directly. Use the [manuals on our documentation website](https://utrechtuniversity.github.io/vre-docs/docs/manuals.html) to transfer your data there directly. 
+> For Onedrive you could click Applications and then Firefox and upload your data using the web portal. This is also possible for SURFdrive and Yoda, but we would recommend using the commend line methods above for reliability and automation.
+
+
+
 ## Scenario 2: Workspace: Jupyter Notebook
 
 ### Step 1: Clone the example GitHub repository
@@ -171,6 +177,11 @@ In the top right corner, select the `Geo kernel` and then the fast forward butto
 ### (Optional) Step 5: Run this Notebook as a job
 
 The Notebook in this project is executed very fast. Imagine that you have a notebook that takes hours to run. While it should be able to do this exactly as described above, the more robust and recommended way is to run such a notebook as a 'background job' with `nohup`. Find instructions on how to do this in [Method 2 in this manual](https://utrechtuniversity.github.io/vre-docs/docs/manuals/long-jobs.html#method-2-using-nohup).
+
+### (Optional) Step 6: Transfer your output data to cloud storage directly
+If you have a [Surfdrive](surfdrive.surf.nl)-, Researchdrive- of Yoda account, you can transfer your output data there directly. Use the [manuals on our documentation website](https://utrechtuniversity.github.io/vre-docs/docs/manuals.html) to transfer your data there directly. 
+> In theory this is also possible for OneDrive but this is not straightforward because you need web browser to login to Onedrive. The easiest way is to download data to your laptop first and then upload it to Onedrive.
+
 
 ## Contact
 
