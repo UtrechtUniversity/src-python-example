@@ -93,19 +93,15 @@ conda activate geo-kernel
 
 ## Scenario 2: Workspace: Jupyter Notebook
 
-### Step 1: Initialize conda
-Open a terminal by clicking the blue button with '+' sign, and run this command in the terminal:
-```
-/etc/miniconda/bin/conda init
-```
-The terminal will tell you to close the terminal and open a new one.
+### Step 1: Clone the example GitHub repository
 
-### Step 2: Clone the example GitHub repository
+Open a terminal by clicking the blue button with '+' sign.
 
 Navigate to your storage volume (if you didn't attach a storage volume, scratch folder is also fine)
 
 In the newly opened terminal window, type:
 ```
+ls
 cd data
 ls
 ```
@@ -121,8 +117,30 @@ git clone https://github.com/UtrechtUniversity/src-python-example.git
 cd src-python-example/
 ```
 
-## Step 3: Create conda environment
+## Step 2: Create environment
 
+### Option 1: `uv` 
+
+Install `uv`
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+The terminal will tell you to close the terminal and open a new one.
+
+After opening a new terminal, create an activate the virtual environment:
+
+```
+uv sync
+source .venv/bin/activate
+```
+
+### Option 2: `conda` 
+
+Initialize conda
+```
+/etc/miniconda/bin/conda init
+```
+The terminal will tell you to close the terminal and open a new one.
 ```
 conda env create --file=environment.yml
 conda activate geo-kernel
