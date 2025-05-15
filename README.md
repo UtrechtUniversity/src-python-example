@@ -24,11 +24,21 @@ The main Python libraries used are:
 - `shapely`
 - `fiona`
 
-## Scenario 1: Python Workbench Desktop 
+## Scenario 1: Python Workbench Desktop
 
-### Step 1: Clone the repository
-Open a terminal
-Navigate to the right folder
+### Step 1: Clone the repository, save it on storage
+
+We will save this example repository, which also contains the data, on the workspace's permanent storage data. In many real-life cases, your data and code will live in separate locations. In that case, it makes sense to save the data, but not the code, on a permanent storage unit.
+
+Steps:
+
+- Open a terminal.
+- You will find your storage unit in the `/data` folder, so go there: `cd /data`
+- `ls` to find out the exact name of your storage unit.
+  * it will be something like `my_storage`, depending on the name you provided when creating the unit.
+- Enter the storage directory with: `cd my_storage`.
+
+Now:
 
 ```
 git clone https://github.com/UtrechtUniversity/src-python-example.git
@@ -72,11 +82,11 @@ conda activate geo-kernel
 
 ### Step 3: Run the the Jupyter notebook in VSCodium
 
-- Open VSCodium
-- Open the folder of the cloned github repo
+- Open VSCodium (Applications > Development > VSCodium)
+- Open the folder of the cloned github repo (under `/data/...`)
 - Open notebooks/Vectors.ipynb
 - Install the required extensions (will be asked to you)
-- Select python interpreter (.venv (or geo-kernel in case of conda environment)
+- Select python interpreter (`.venv` (or `geo-kernel` in case of conda environment)
 - Click: Run all
 
 ## Contact
